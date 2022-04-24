@@ -4,106 +4,260 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sola's Personal Website</title>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a60085121c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,900;1,100;1,200&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <img
-      src="img/IMG_20210725_120457_828.jpg"
-      alt="sola profile picture"
-      height="200"
-      width="200"
-    />
-    <h1>Ayodele Olusola</h1>
-    <p>
-      <em
-        >CTO <strong><a href="#">Solited tech</a></strong></em
-      >
-    </p>
-    <p>
-      I am a fullstack developer with over 5 years experience working with
-      different web technologies. I have experience working with html, css and
-      javascript of all generations. I'm very conversant with technologies such
-      as vuejs, react.js and typescript.
-    </p>
-    <hr />
-    <h3>Education</h3>
-    <ul>
-      <li>
-        University of Benin, Benin-City <em>Masters in Chemical Engineering</em>
-      </li>
-      <li>
-        Obafemi Awolowo University, Ile-Ife.
-        <em>Bachelor in Chemical Engineering</em>
-      </li>
-    </ul>
-    <h3>Work Experience</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Role</th>
-          <th>Organization/Company</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>2016-2017</td>
-          <td>Software Engineer</td>
-          <td>Soleadtech Information Center</td>
-        </tr>
-        <tr>
-          <td>2017-2022</td>
-          <td>Chief Technical Officer</td>
-          <td>Soleadtech Information Center</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr />
-    <h3>Skills</h3>
+    <div class="container">
+      <!-- Section 1 -->
+      <section class="section-1 center" id="section-1">
+        <h1 class="section-1-heading">Web Developer</h1>
+        <img src="img/john-smith.jpg" alt="John Smith" class="profile-img" />
+        <h3 class="person-name">John Smith</h3>
+        <a href="#section-3" class="section-1-btn">Projects</a>
+      </section>
+      <!-- End of Section 1 -->
+      <!-- Navbar -->
+      <nav class="navbar center">
+        <ul>
+          <li class="nav-item">
+            <a href="#section-1" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#section-2" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#section-3" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#section-4" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of Navbar -->
+      <!-- Section 2 -->
+      <section class="section-2" id="section-2">
+        <h1 class="section-heading section-heading-2">About Me</h1>
+        <div class="progress-bar-wrapper">
+          <div class="progress-bar">
+            <p class="progress-text">
+              HTML
+              <span id="percent">95</span>%
+            </p>
+            <div class="progress-percent"></div>
+          </div>
+          <div class="progress-bar">
+            <p class="progress-text">
+              CSS
+              <span id="percent">92</span>%
+            </p>
+            <div class="progress-percent"></div>
+          </div>
+          <div class="progress-bar">
+            <p class="progress-text">
+              JAVASCRIPT
+              <span id="percent">90</span>%
+            </p>
+            <div class="progress-percent"></div>
+          </div>
+          <div class="progress-bar">
+            <p class="progress-text">
+              BOOTSTRAP
+              <span id="percent">90</span>%
+            </p>
+            <div class="progress-percent"></div>
+          </div>
+          <div class="progress-bar">
+            <p class="progress-text">
+              DJANGO
+              <span id="percent">85</span>%
+            </p>
+            <div class="progress-percent"></div>
+          </div>
+          <div class="progress-bar">
+            <p class="progress-text">
+              PYTHON
+              <span id="percent">85</span>%
+            </p>
+            <div class="progress-percent"></div>
+          </div>
+          <div class="progress-bar">
+            <p class="progress-text">
+              REACT
+              <span id="percent">80</span>%
+            </p>
+            <div class="progress-percent"></div>
+          </div>
+          <div class="progress-bar">
+            <p class="progress-text">
+              GIT
+              <span id="percent">75</span>%
+            </p>
+            <div class="progress-percent"></div>
+          </div>
+        </div>
+        <div class="services">
+          <div class="service">
+            <i class="far fa-lightbulb"></i>
+            <h2 class="service-heading">Creative</h2>
+          </div>
+          <div class="service">
+            <i class="fas fa-cut"></i>
+            <h2 class="service-heading">Problem Solving</h2>
+          </div>
+          <div class="service">
+            <i class="fas fa-tachometer-alt"></i>
+            <h2 class="service-heading">Fast</h2>
+          </div>
+          <div class="service">
+            <i class="fas fa-rocket"></i>
+            <h2 class="service-heading">Dynamic</h2>
+          </div>
+        </div>
+      </section>
+      <!-- End of Section 2 -->
+      <!-- Section 3 -->
+      <section class="section-3" id="section-3">
+        <div class="section-heading section-3-heading">My Projects</div>
+        <div class="projects-container">
+          <div class="project-container">
+            <h2 class="project-heading">House of Gold</h2>
+            <p class="technologies">HTML / CSS/ JS</p>
+            <img
+              src="img/project-1.jpg"
+              alt="House built by Architect"
+              class="project-img"
+            />
+            <a class="project-link" href="#">Go to Video</a>
+          </div>
+          <div class="project-container">
+            <h2 class="project-heading-1">Budget App</h2>
+            <p class="technologies">ReactJS</p>
+            <img
+              src="img/project-2.jpg"
+              alt="House built by Architect"
+              class="project-img"
+            />
+            <a class="project-link" href="#">Go to Video</a>
+          </div>
+          <div class="project-container">
+            <h2 class="project-heading">Wine House</h2>
+            <p class="technologies">HTML / CSS/ JS</p>
+            <img
+              src="img/project-3.jpg"
+              alt="House built by Architect"
+              class="project-img"
+            />
+            <a class="project-link" href="#">Go to Video</a>
+          </div>
+          <div class="project-container">
+            <h2 class="project-heading">Task Manager</h2>
+            <p class="technologies">ReactJS</p>
+            <img
+              src="img/project-4.jpg"
+              alt="House built by Architect"
+              class="project-img"
+            />
+            <a class="project-link" href="#">Go to Video</a>
+          </div>
+          <div class="project-container">
+            <h2 class="project-heading">The Road</h2>
+            <p class="technologies">HTML / CSS/ JS</p>
+            <img
+              src="img/project-5.jpg"
+              alt="House built by Architect"
+              class="project-img"
+            />
+            <a class="project-link" href="#">Go to Video</a>
+          </div>
+          <div class="project-container">
+            <h2 class="project-heading">Food Recipe App</h2>
+            <p class="technologies">ReactJS</p>
+            <img src="img/project-6.jpg" alt="Food App" class="project-img" />
+            <a class="project-link" href="#">Go to Video</a>
+          </div>
+          <div class="project-container">
+            <h2 class="project-heading">Image Slider</h2>
+            <p class="technologies">HTML / CSS/ JS</p>
+            <img
+              src="img/project-7.jpg"
+              alt="House built by Architect"
+              class="project-img"
+            />
 
-    <table>
-      <tr>
-        <td>
-          <table>
-            <tr>
-              <td>Web Development</td>
-              <td>⭐⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td>Command Line Usage</td>
-              <td>⭐⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td>Photography</td>
-              <td>⭐⭐⭐</td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <table>
-            <tr>
-              <td>Graphics Design</td>
-              <td>⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td>Android Development</td>
-              <td>⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td>iOS Development</td>
-              <td>⭐⭐⭐</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <hr />
-    <ol type="1">
-      <li>Football</li>
-      <li><a href="#">Coding</a></li>
-      <li><a href="#">Skiing</a></li>
-      <li>Surfing the Internet</li>
-    </ol>
-    <p><a href="contact.html">Contact Me</a></p>
+            <a class="project-link" href="#">Go to Video</a>
+          </div>
+          <div class="project-container">
+            <h2 class="project-heading">Hamburger Menu</h2>
+            <p class="technologies">HTML / CSS/ JS</p>
+            <img
+              src="img/project-8.jpg"
+              alt="Hamburger Menu"
+              class="project-img"
+            />
+
+            <a class="project-link" href="#">Go to Video</a>
+          </div>
+          <div class="project-container">
+            <h2 class="project-heading">CSS Grid-Menu</h2>
+            <p class="technologies">HTML / CSS/ JS</p>
+            <img
+              src="img/project-9.jpg"
+              alt="CSS grid menu"
+              class="project-img"
+            />
+            <a class="project-link" href="#">Go to Video</a>
+          </div>
+        </div>
+      </section>
+      <!-- End of Section 3 -->
+      <!-- Section 4 -->
+      <section class="section-4" id="section-4">
+        <div class="section-heading section-4-heading">Contact Me</div>
+        <form action="#" class="contact-form">
+          <input type="text" placeholder="Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <input type="submit" placeholder="Submit" class="submit" />
+        </form>
+      </section>
+      <!-- End of Section 4 -->
+      <!-- Section 5 -->
+      <footer class="section-5">
+        <div class="social-media">
+          <a href="#" class="social-media-link">
+            <i class="fab fa-github-square"></i>
+          </a>
+          <a href="#" class="social-media-link">
+            <i class="fab fa-youtube-square"></i>
+          </a>
+          <a href="#" class="social-media-link">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#" class="social-media-link">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+        </div>
+        <p class="footer-text">
+          Copyright &copy; 2022 solited All Rights Reserved.
+        </p>
+      </footer>
+      <!-- End of Section 5 -->
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
